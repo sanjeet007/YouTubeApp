@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebfffe"
+    tools:context=".Activites.VideoPlayActivity">
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/youTubePlayer">
+
+    </com.google.android.youtube.player.YouTubePlayerView>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/youTubePlayer"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/videoTitle_id"
+                android:text="Title"
+                android:textColor="#000"
+                android:layout_margin="5sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#4b4b4b"
+                android:layout_margin="5dp"
+                android:text="Description"
+                android:layout_marginTop="30dp"
+                android:textSize="15sp"
+                android:id="@+id/tvDescription"/>
+
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>
